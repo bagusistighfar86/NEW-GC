@@ -13,7 +13,7 @@ public class KartCollider : MonoBehaviour
         if (other.gameObject.CompareTag("Wall"))
         {
         Debug.Log("TABRAK");
-        kartAgent.AddReward(-0.5f);
+        kartAgent.AddReward(-0.1f);
         }
     }
 

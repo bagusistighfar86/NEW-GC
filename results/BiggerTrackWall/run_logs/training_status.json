@@ -2,58 +2,58 @@
     "KartAgent": {
         "checkpoints": [
             {
-                "steps": 499985,
-                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-499985.onnx",
-                "reward": -1.7660224419087172,
-                "creation_time": 1654175180.8885725,
+                "steps": 29999978,
+                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-29999978.onnx",
+                "reward": 0.05035706888884306,
+                "creation_time": 1654271515.5480268,
                 "auxillary_file_paths": [
-                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-499985.pt"
+                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-29999978.pt"
                 ]
             },
             {
-                "steps": 999992,
-                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-999992.onnx",
-                "reward": -1.5845224522054195,
-                "creation_time": 1654176735.3055842,
-                "auxillary_file_paths": [
-                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-999992.pt"
-                ]
-            },
-            {
-                "steps": 1166812,
-                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-1166812.onnx",
-                "reward": -2.058772372547537,
-                "creation_time": 1654177278.718139,
-                "auxillary_file_paths": [
-                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-1166812.pt"
-                ]
-            },
-            {
-                "steps": 1499987,
-                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-1499987.onnx",
+                "steps": 30499968,
+                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-30499968.onnx",
                 "reward": null,
-                "creation_time": 1654178383.5123863,
+                "creation_time": 1654273099.4154816,
                 "auxillary_file_paths": [
-                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-1499987.pt"
+                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-30499968.pt"
                 ]
             },
             {
-                "steps": 1738678,
-                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-1738678.onnx",
-                "reward": -3.872642610222101,
-                "creation_time": 1654179034.882567,
+                "steps": 30999954,
+                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-30999954.onnx",
+                "reward": -0.04147628205828369,
+                "creation_time": 1654274677.0952857,
                 "auxillary_file_paths": [
-                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-1738678.pt"
+                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-30999954.pt"
+                ]
+            },
+            {
+                "steps": 31499943,
+                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-31499943.onnx",
+                "reward": 0.08185706567019224,
+                "creation_time": 1654276224.9231803,
+                "auxillary_file_paths": [
+                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-31499943.pt"
+                ]
+            },
+            {
+                "steps": 31571628,
+                "file_path": "results\\BiggerTrackWall\\KartAgent\\KartAgent-31571628.onnx",
+                "reward": 0.08335707825608552,
+                "creation_time": 1654276450.47973,
+                "auxillary_file_paths": [
+                    "results\\BiggerTrackWall\\KartAgent\\KartAgent-31571628.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 1738678,
+            "steps": 31571628,
             "file_path": "results\\BiggerTrackWall\\KartAgent.onnx",
-            "reward": -3.872642610222101,
-            "creation_time": 1654179034.882567,
+            "reward": 0.08335707825608552,
+            "creation_time": 1654276450.47973,
             "auxillary_file_paths": [
-                "results\\BiggerTrackWall\\KartAgent\\KartAgent-1738678.pt"
+                "results\\BiggerTrackWall\\KartAgent\\KartAgent-31571628.pt"
             ]
         }
     },

@@ -28,7 +28,6 @@ public class KartController : MonoBehaviour
    [Header("Model Parts")]
    public Transform frontWheels;
    public Transform backWheels;
-   public Transform steeringWheel;
 
    public void Awake()
    {
@@ -56,8 +55,6 @@ public class KartController : MonoBehaviour
       frontWheels.localEulerAngles += new Vector3(0, 0, sphere.velocity.magnitude / 2);
       backWheels.localEulerAngles += new Vector3(0, 0, sphere.velocity.magnitude / 2);
       
-      // Mengubah vector rotasi setir
-      steeringWheel.localEulerAngles = new Vector3(-25, 90, ((input * 45)));
    }
    
    // Kart saat respawn
