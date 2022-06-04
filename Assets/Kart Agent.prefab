@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kartAgent: {fileID: 3137537921882263140}
+  _checkpointManager: {fileID: 2584858872586178397}
 --- !u!1 &3137537921143488006
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,7 +995,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 93a48e6a0cb102d4fa4c5b3a1b329455, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: KartAgent
