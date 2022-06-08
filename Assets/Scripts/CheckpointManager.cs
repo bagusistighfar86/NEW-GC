@@ -40,7 +40,7 @@ public class CheckpointManager : MonoBehaviour
         if (TimeLeft < 0f)
         {
             kartAgent.AddReward(-1f);
-            // kartAgent.EndEpisode();
+            kartAgent.EndEpisode();
         }
     }
 
@@ -58,7 +58,7 @@ public class CheckpointManager : MonoBehaviour
         {
             Debug.Log("FINISHHHH");
             kartAgent.AddReward(0.5f);
-            // kartAgent.EndEpisode();
+            kartAgent.EndEpisode();
         }
         else
         {

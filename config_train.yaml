@@ -2,7 +2,7 @@ behaviors:
   KartAgent:
     trainer_type: ppo
   
-    max_steps: 5.0e7
+    max_steps: 7.0e7
     time_horizon: 64
     summary_freq: 10000
 

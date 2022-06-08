@@ -20,10 +20,8 @@ public class KartAgent : Agent
    //Dipanggil saat waktu habis dan telah mencapai goal
    public override void OnEpisodeBegin()
    {
-      // transform.position = _spawnPosition.position + new Vector3(Random.Range(-5f, +5f),0, Random.Range(-5f, +5f));
-      // transform.forward = _spawnPosition.forward;
       _checkpointManager.ResetCheckpoints();
-      _kartController.Respawn();
+      // _kartController.Respawn();
    }
 
    void Update () {
@@ -44,12 +42,6 @@ public class KartAgent : Agent
       //Mengumpulkan informasi tambahan yang tidak diambil oleh RaycastSensors
       public override void CollectObservations(VectorSensor sensor)
       {
-         // Vector3 toTarget = (_checkpointManager.nextCheckPointToReach.transform.position - transform.position).normalized;
-         // if (Vector3.Dot(toTarget, transform.forward) > 0) {
-         //    Debug.Log("Target is in front of this game object.");
-         // } else {
-         //    Debug.Log("Target is not in front of this game object.");
-         // }
          Vector3 checkpointForward = _checkpointManager.nextCheckPointToReach.transform.forward;
          float directionDot = Vector3.Dot(transform.forward, checkpointForward);
          sensor.AddObservation(directionDot);
@@ -67,6 +59,7 @@ public class KartAgent : Agent
          var input = actions.ContinuousActions;
 
          _kartController.ApplyAcceleration(input[1]);
+         _kartController.AnimateKart(input[1]);
          _kartController.Steer(input[0]);
 
          // Agar terus menambah kecepatan diberikan reward kecil sesuai kecepatannya

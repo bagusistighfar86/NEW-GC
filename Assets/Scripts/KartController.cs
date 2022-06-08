@@ -47,14 +47,13 @@ public class KartController : MonoBehaviour
 
    public void AnimateKart(float input)
    {
-      // Mengubah vector rotasi kart
-      kartModel.localEulerAngles = Vector3.Lerp(kartModel.localEulerAngles, new Vector3(0, 90 + (input * 15), kartModel.localEulerAngles.z), .2f);
+      // // Mengubah vector rotasi kart
+      kartModel.localEulerAngles = Vector3.Lerp(kartModel.localEulerAngles, new Vector3(0, 90 + (input * 10), kartModel.localEulerAngles.z), .2f);
       
       // Mengubah vector rotasi roda depan dan belakang
-      frontWheels.localEulerAngles = new Vector3(0, (input * 15), frontWheels.localEulerAngles.z);
-      frontWheels.localEulerAngles += new Vector3(0, 0, sphere.velocity.magnitude / 2);
-      backWheels.localEulerAngles += new Vector3(0, 0, sphere.velocity.magnitude / 2);
-      
+      frontWheels.localEulerAngles = new Vector3(0, (input * 10), frontWheels.localEulerAngles.z);
+      frontWheels.localEulerAngles += new Vector3(0, 0, sphere.velocity.magnitude);
+      backWheels.localEulerAngles += new Vector3(0, 0, sphere.velocity.magnitude);
    }
    
    // Kart saat respawn
@@ -63,9 +62,8 @@ public class KartController : MonoBehaviour
       Vector3 pos = _spawnPointManager.SelectRandomSpawnpoint().position;
       Quaternion rot = _spawnPointManager.SelectRandomSpawnpoint().rotation;
       sphere.MovePosition(pos);
-      transform.position = pos - new Vector3(0, 0.4f, 0);
+      transform.position = pos;
       transform.rotation = rot;
-      Debug.Log(rot);
    }
    
    public void FixedUpdate()
