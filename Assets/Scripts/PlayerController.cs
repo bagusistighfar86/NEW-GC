@@ -14,8 +14,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var steering = Input.GetAxis("Horizontal");
+        var steering = -(Input.GetAxis("Horizontal"));
         k_controller.Steer(steering);
+        k_controller.AnimateKart(-steering);
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
             k_controller.ApplyAcceleration(1f);
