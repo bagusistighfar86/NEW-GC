@@ -40,7 +40,7 @@ public class CheckpointManager : MonoBehaviour
         if (TimeLeft < 0f)
         {
             kartAgent.AddReward(-1f);
-            kartAgent.EndEpisode();
+            // kartAgent.EndEpisode();
         }
     }
 
@@ -50,18 +50,15 @@ public class CheckpointManager : MonoBehaviour
         
         checkpointForward = nextCheckPointToReach.transform.forward;
 
-        if (nextCheckPointToReach != checkpoint) {
-            return;
-        }
+        if (nextCheckPointToReach != checkpoint) return;
         lastCheckpoint = Checkpoints[CurrentCheckpointIndex];
         reachedCheckpoint?.Invoke(checkpoint);
         CurrentCheckpointIndex++;
-
+    
         if (CurrentCheckpointIndex >= Checkpoints.Count)
         {
-            Debug.Log("FINISHHHH");
             kartAgent.AddReward(0.5f);
-            kartAgent.EndEpisode();
+            // kartAgent.EndEpisode();
         }
         else
         {

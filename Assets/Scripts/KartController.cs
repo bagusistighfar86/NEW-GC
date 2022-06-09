@@ -29,10 +29,10 @@ public class KartController : MonoBehaviour
    public Transform frontWheels;
    public Transform backWheels;
 
-   public void Awake()
-   {
-      _spawnPointManager = FindObjectOfType<SpawnPointManager>();
-   }
+   // public void Awake()
+   // {
+   //    _spawnPointManager = FindObjectOfType<SpawnPointManager>();
+   // }
 
    public void ApplyAcceleration(float input)
    {
@@ -78,7 +78,6 @@ public class KartController : MonoBehaviour
       
       //Setir
       transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, new Vector3(0, transform.eulerAngles.y - currentRotate, 0), Time.deltaTime * 5f);
-      // Debug.Log(transform.eulerAngles);
       
       Physics.Raycast(transform.position + (transform.up*.1f), Vector3.down, out RaycastHit hitOn, 1.1f,layerMask);
       Physics.Raycast(transform.position + (transform.up * .1f)   , Vector3.down, out RaycastHit hitNear, 2.0f, layerMask);

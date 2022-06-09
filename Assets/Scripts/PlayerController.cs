@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public KartController k_controller;
     public GameObject countDown;
+    public GameObject endGame;
     // Start is called before the first frame update
     // void Start()
     // {
@@ -15,8 +16,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(countDown.activeSelf);
-        if (countDown.activeSelf == false){
+        if (countDown.activeSelf == false && endGame.activeSelf == false){
             var steering = -(Input.GetAxis("Horizontal"));
             k_controller.Steer(steering);
             k_controller.AnimateKart(-steering);
