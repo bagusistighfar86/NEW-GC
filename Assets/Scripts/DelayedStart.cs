@@ -12,12 +12,6 @@ public class DelayedStart : MonoBehaviour
         StartCoroutine ("StartDelay");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator StartDelay(){
         Time.timeScale = 0;
         float pauseTime = Time.realtimeSinceStartup + 8.5f;
